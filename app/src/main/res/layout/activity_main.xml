@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/constraint_up"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="120dp"
+            android:maxHeight="120dp"
+            android:src="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@id/instagram"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+        <ImageView
+            android:id="@+id/add_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toStartOf="@id/love_up"
+            android:adjustViewBounds="true"
+            android:maxWidth="23dp"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/love_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="12dp"
+            android:layout_toStartOf="@id/send_up"
+            android:adjustViewBounds="true"
+            android:maxWidth="25dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/send_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="24dp"
+            android:src="@drawable/send" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cowok_satu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cewek_satu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/berlian" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cowok_empat" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cowok_lima" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cowok_tiga" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cowok_satu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/gatausapa" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cowok_satu" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/sooyoung" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="60dp"
+                android:src="@drawable/cowok_satu" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_below="@id/horizontal_scroll"
+        android:layout_above="@id/navigation"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profil_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cowok_tiga"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:maxWidth="40dp"
+                app:layout_constraintBottom_toTopOf="@id/feed"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/anonim"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonim"
+                android:textColor="@color/black"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/sponsor"
+                app:layout_constraintStart_toEndOf="@id/profil_feed"/>
+
+            <TextView
+                android:id="@+id/sponsor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Sponsored"
+                app:layout_constraintBottom_toBottomOf="@id/feed"
+                app:layout_constraintStart_toEndOf="@id/profil_feed"
+                app:layout_constraintBottom_toTopOf="@id/feed"
+                app:layout_constraintTop_toBottomOf="@id/anonim"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:maxWidth="25dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/feed"/>
+
+            <ImageView
+                android:id="@+id/feed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iron_man"
+                app:layout_constraintTop_toBottomOf="@id/profil_feed"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/love_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart"
+                android:adjustViewBounds="true"
+                android:maxWidth="27dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/feed"
+                app:layout_constraintEnd_toStartOf="@id/chat_feed"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:id="@+id/chat_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat"
+                android:adjustViewBounds="true"
+                android:maxWidth="25dp"
+                app:layout_constraintStart_toEndOf="@id/love_feed"
+                app:layout_constraintTop_toBottomOf="@id/feed"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:id="@+id/send_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send"
+                android:adjustViewBounds="true"
+                android:maxWidth="25dp"
+                app:layout_constraintStart_toEndOf="@id/chat_feed"
+                app:layout_constraintTop_toBottomOf="@id/feed"
+                android:layout_margin="16dp"/>
+
+            <ImageView
+                android:id="@+id/mark_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mark"
+                android:adjustViewBounds="true"
+                android:maxWidth="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/feed"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 likes"
+                app:layout_constraintTop_toBottomOf="@id/chat_feed"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment in here"
+                app:layout_constraintTop_toBottomOf="@id/likes"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/profil_feed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cewek_satu"
+                app:layout_constraintTop_toBottomOf="@id/comment"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:maxWidth="40dp"
+                android:layout_margin="8dp"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/anonim1"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anonim_2"
+                android:textColor="@color/black"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/comment"
+                app:layout_constraintBottom_toTopOf="@+id/sponsor1"
+                app:layout_constraintStart_toEndOf="@id/profil_feed1"/>
+
+            <TextView
+                android:id="@+id/sponsor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Sponsored"
+                app:layout_constraintBottom_toBottomOf="@id/feed1"
+                app:layout_constraintStart_toEndOf="@id/profil_feed1"
+                app:layout_constraintBottom_toTopOf="@id/feed1"
+                app:layout_constraintTop_toBottomOf="@id/anonim1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:maxWidth="25dp"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toBottomOf="@id/comment"
+                app:layout_constraintBottom_toTopOf="@id/feed1"/>
+
+            <ImageView
+                android:id="@+id/feed1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/thor"
+                app:layout_constraintTop_toBottomOf="@id/profil_feed1"
+                android:adjustViewBounds="true"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigation"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/home_black"
+            android:padding="16dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="55dp"
+            app:layout_constraintEnd_toStartOf="@id/search"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/search"
+            android:padding="16dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="55dp"
+            app:layout_constraintEnd_toStartOf="@id/reels"
+            app:layout_constraintStart_toEndOf="@id/home"/>
+
+        <ImageView
+            android:id="@+id/reels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/video"
+            android:padding="16dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="55dp"
+            app:layout_constraintEnd_toStartOf="@id/bag"
+            app:layout_constraintStart_toEndOf="@id/search"/>
+
+        <ImageView
+            android:id="@+id/bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/bag"
+            android:adjustViewBounds="true"
+            android:maxWidth="55dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toStartOf="@id/profile"
+            app:layout_constraintStart_toEndOf="@id/reels"/>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/person"
+            android:adjustViewBounds="true"
+            android:maxWidth="55dp"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bag"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+
+
